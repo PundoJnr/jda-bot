@@ -1,5 +1,6 @@
 import commands.calculate;
 import commands.invite;
+import commands.userinfo;
 import events.CategoryCreate;
 import events.greetings;
 import net.dv8tion.jda.core.AccountType;
@@ -16,6 +17,7 @@ public class main {
         builder.addEventListener(new CategoryCreate());
         builder.addEventListener(new calculate());
         builder.addEventListener(new invite());
+        builder.addEventListener(new userinfo());
         builder.buildAsync();
     }
 
